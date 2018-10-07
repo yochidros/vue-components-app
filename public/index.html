@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>Vue Components</title>
     <meta charset="utf-8">
@@ -9,8 +9,31 @@
     <main id="main">
       <fruits-list-title></fruits-list-title>
       <fruits-list-description></fruits-list-description>
-      <fruits-list-table></fruits-list-table>
     </main>
+    <div id="input-date-with-today">
+      <input-date-with-today></input-date-with-today>
+    </div>
+    <div id="counter">
+      <simple-counter></simple-counter>
+    </div>
+    <div id="item-list">
+      <ol>
+        <fruits-items-name 
+          v-for="fruit in fruitsItems" 
+          :key="fruit.name" 
+          :fruits-item="fruit">
+        </fruits-items-name>
+      </ol>
+    </div>
+
+    <div id="fruits-counter">
+      <div v-for="fruit in fruits">
+        {{fruit.name}}: <counter-button v-on:increment="incrementCartStatus()"></counter-button> 
+      </div>
+      <p>
+        Sum: {{total}}
+      </p>
+    </div>
   </body>
   <script src="../src/Vue.js"></script>
 </html>
