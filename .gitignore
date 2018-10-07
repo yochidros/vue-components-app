@@ -1,1 +1,7 @@
 node_modules/*
+node_modules/.bin/*
+node_modules/.cache/*
+
+webpack.config.js
+karma.conf.js
+dist/*
