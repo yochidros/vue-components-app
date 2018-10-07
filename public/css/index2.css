@@ -7,12 +7,39 @@
   padding: 30px 15px;
 }
 
+.content ul {
+  width: 100%;
+  padding: 0px;
+}
+
 .content li {
   width: 100%;
   height: 30px;
-  padding: 30px 15px;
+  padding: 15px 15px;
   background-color: white;
   border: 1px solid #d3d3d3;
   text-align: left;
   list-style-type: none;
 }
+
+#login-example {
+  width: 100%;
+  height: 100px;
+  padding: 30px 30px;
+  background-color: white;
+  align-self: center;
+  align-items: center;
+}
+
+#login-example div {
+  padding: 10px 10px;
+}
+#login-example div button {
+  color: black;
+  background-color: #00FFFF;
+  align-content: flex-end;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+

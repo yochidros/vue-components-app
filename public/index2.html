@@ -19,8 +19,24 @@
         </ul>
       </page-content>
     </div>
+    <div id="login-example">
+      <user-login></user-login>
+    </div>
+
 
   </body>
+
+  <script type="text/x-template" id="login-template">
+    <div id="login-template">
+      <div>
+        <input type="text" placeholder="Login ID" v-model="userid">
+      </div>
+      <div>
+        <input type="password" placeholder="Password" v-model="password">
+      </div>
+      <button v-on:click="login">LogIn</button>
+    </div>
+  </script>
   <script src="../src/Vue2.js" type="text/javascript"></script>
   <link rel="stylesheet" href="./css/index2.css" type="text/css" media="all" />
 </html>
