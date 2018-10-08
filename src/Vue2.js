@@ -24,9 +24,19 @@ new Vue({
   el: '#fruits-list'
 })
 
+var checkInputValue = {
+  check: function(value) {
+    return value.length > 0
+  }
+}
 var auth = {
   login: function(id, pass) {
-    window.alert("userid:" + id + "\n" + "password:" + pass)
+    if (checkInputValue.check(id) && checkInputValue.check(pass) ) {
+      window.alert("userid:" + id + "\n" + "password:" + pass)
+    } else {
+      window.alert("ERROR: invalid value!!")
+    }
+
   }
 }
 
